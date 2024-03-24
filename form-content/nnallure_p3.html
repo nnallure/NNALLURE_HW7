@@ -1,0 +1,51 @@
+<!-- nnallure_p3.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAIS Survey</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f96cc25a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Business Analytics Student Survey</h1>
+        
+        <form action="finish.html" method="post"> <!-- Update action to link to your completion page -->
+            <div class="form-group">
+                <label for="race">Race/Ethnicity:</label>
+                <select name="race" id="race" required>
+                    <option value="">-- please choose an option --</option>
+                    <option value="Asian">Asian</option>
+                    <option value="Black or African American">Black or African American</option>
+                    <option value="Hispanic or Latino">Hispanic or Latino</option>
+                    <option value="White">White</option>
+                    <option value="Native Hawaiian or Other Pacific Islander">Native Hawaiian or Other Pacific Islander</option>
+                    <option value="American Indian or Alaska Native">American Indian or Alaska Native</option>
+                    <option value="Two or More Races">Two or More Races</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender/Sex:</label>
+                <select name="gender" id="gender" required>
+                    <option value="">-- please choose an option --</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Non-binary/Third gender">Non-binary/Third gender</option>
+                    <option value="Other">Prefer not to say</option>
+                </select>
+                <span class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">Identifying your gender helps us enhance diversity and inclusivity in tech by addressing historical gender imbalances.</span></span>
+            </div>
+
+            <button type="submit">Finish</button>
+        </form>
+
+        <footer>
+            <p>Page 3 of 3</p>
+        </footer>
+    </div>
+</body>
+</html>
