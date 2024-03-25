@@ -1,0 +1,127 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5; /* Light grey background */
+    color: #333; /* Dark grey text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    width: 90%;
+    max-width: 600px; /* Max width for larger screens */
+    background-color: #fff; /* White background for the content */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    font-size: 24px; /* Larger font size for the heading */
+    color: #007bff; /* Bootstrap blue for a bit of color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+p {
+    line-height: 1.6; /* Increase line-height for readability */
+    margin-bottom: 10px; /* Space between paragraphs */
+}
+
+button {
+    background-color: #007bff; /* Bootstrap blue */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block; /* Allow margin to affect inline elements like button */
+    margin-top: 20px; /* Space above the button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover for interaction feedback */
+}
+
+.form-group label{
+    display: block; /* Ensures each element takes up the full width available and starts on a new line */
+    margin-top: 18px; /* Adds a little space below each element for clarity */
+}
+
+.required {
+    display: block; /* Makes the text appear on a new line, below the question */
+    color: red; /* Sets the text color to red */
+    font-size: 0.8rem; /* Makes the font size smaller */
+    margin-top: 5px; /* Adds a bit of space between the question and this text */
+}
+
+.fontawesome {
+    font-size: 1.15rem;
+    color: #333333;
+ }
+
+ .tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 200px;
+background-color: #333333;
+color: #f8f8f8;
+font-size: 1.15rem;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+border-radius: 6px;
+padding: 15px;
+
+/* Position the tooltip text */
+position: absolute;
+z-index: 1;
+top: 100%;
+left: 50%;
+margin-left: -100px;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+}
+
+.survey-container, .question {
+    margin-bottom: 20px; /* Adds space below each question container */
+    border: 1px solid #ddd; /* Adds a light border around the question container */
+    padding: 15px; /* Padding inside the question containers */
+    border-radius: 5px; /* Slightly rounded corners for the containers */
+}
+
+.question label, .survey-container label {
+    display: block; /* Ensures each label starts on a new line */
+    margin-bottom: 10px; /* Adds some space below each checkbox for better separation */
+}
+
+select {
+    font-family: 'Roboto', sans-serif; /* Matches the font of the rest of the form */
+    font-size: 16px; /* Adequate font size for readability */
+    color: #333; /* Text color */
+    padding: 8px 12px; /* Padding inside the dropdown for better text visibility */
+    border: 1px solid #ccc; /* Subtle border similar to other input fields */
+    border-radius: 4px; /* Slightly rounded corners */
+    background-color: #fff; /* Background color; could use a different color or keep it white */
+    width: 100%; /* Ensures the dropdown fills the width of its container */
+    box-sizing: border-box; /* Ensures padding doesn't increase the dropdown's width beyond 100% */
+    margin-bottom: 10px; /* Space below the dropdown for separation from the next form element */
+}
+
+/* Style for focus state to improve accessibility */
+select:focus {
+    border-color: #007bff; /* Highlight color when the dropdown is focused */
+    outline: none; /* Removes the default focus outline */
+    box-shadow: 0 0 0 2px rgba(0,123,255,.25); /* Adds a soft glow effect when focused */
+}
