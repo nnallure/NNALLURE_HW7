@@ -1,6 +1,3 @@
-# Student Survey
-BAIS3300 - Web form
-
 # Business Analytics Student Survey
 
 ## Description of the Project
