@@ -1,11 +1,6 @@
 # NNALLURE_HW7
 BAIS3300 - Web form
 
-
-. How your form provides for user accessibility (at least 1 paragraph).
-What specifically did you do to make your web forms accessible to all users?
-
-
 # Business Analytics Student Survey
 
 ## Description of the Project
